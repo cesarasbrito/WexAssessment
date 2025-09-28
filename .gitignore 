@@ -1,0 +1,75 @@
+# -----------------------------------------------
+# Recommended .gitignore for C# / .NET Core Projects
+# -----------------------------------------------
+
+# *************************
+# 1. Build and output folders
+# *************************
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+# Results from 'dotnet publish'
+publish/
+# Results from 'dotnet pack'
+*.nupkg
+*.snupkg
+
+# *************************
+# 2. Visual Studio (VS) files and folders
+# *************************
+# VS temporary files
+*.vspscc
+*.vssscc
+*.suo
+*.user
+*.userossc
+*.sln.docstates
+
+# ReSharper, dotCover, etc.
+**/*.resharper
+*.dotSettings
+.idea/
+
+# *************************
+# 3. Test and coverage files
+# *************************
+# Test results
+TestResults/
+# Code coverage results
+*.coverage
+*.opencover
+*.codecoverage
+.coverage
+
+# *************************
+# 4. Global project/solution files
+# *************************
+# NuGet files
+# Note: Keep the 'nuget.config' file if you use custom sources.
+packages/
+# The project.lock.json is obsolete, but kept for legacy projects
+project.lock.json
+# Editor configuration files
+*.bak
+*.orig
+*~
+
+# *************************
+# 5. OS and IDE specific files
+# *************************
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Visual Studio Code
+.vscode/
+
+# -----------------------------------------------
+# 6. Docker/Container build context (if applicable)
+# -----------------------------------------------
+# Ignore if you build inside the container, but often useful locally
+Dockerfile.build
+.dockerignore
