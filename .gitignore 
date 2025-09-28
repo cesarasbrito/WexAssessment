@@ -73,3 +73,22 @@ project.lock.json
 # Ignore if you build inside the container, but often useful locally
 Dockerfile.build
 .dockerignore
+
+# Visual Studio / Rider / VSCode
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build
+bin/
+obj/
+out/
+
+# Database
+*.db
+*.sqlite
+
+# Tools
+*.dotnet-tools.json
